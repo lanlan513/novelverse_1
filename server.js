@@ -35,7 +35,7 @@ async function readStore() {
 }
 let writeQueue = Promise.resolve()
 async function writeStore(store) { writeQueue = writeQueue.then(async () => { await fs.mkdir(dataDir, { recursive: true }); await fs.writeFile(dataFile, JSON.stringify(store, null, 2)) }); return writeQueue }
-function requireUser(req, res) { const id = req.header('x-user-id'); if (!id) { res.status(401).json({ error: 'UNAUTHENTICATED', message: '请先登录 Novelverse' }); return null } return id }
+function requireUser(req, res) { const id = req.header('x-user-id') || req.query.userId; if (!id) { res.status(401).json({ error: 'UNAUTHENTICATED', message: '请先登录 Novelverse' }); return null } return id }
 function now() { return new Date().toISOString() }
 
 app.get('/api/me', (req, res) => res.json({ user: demoUser }))
