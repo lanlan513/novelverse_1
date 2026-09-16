@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "user-demo",
+      "name": "林舟",
+      "handle": "linzhou",
+      "initials": "LZ"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-salt-wind",
+      "title": "盐与风的航线",
+      "description": "在潮汐尽头，寻找一座不存在的岛。",
+      "visibility": "private",
+      "cover": {
+        "kind": "image",
+        "value": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+        "name": "salt-wind.jpg"
+      },
+      "ownerId": "user-demo",
+      "createdAt": "2026-09-08T09:30:00.000Z",
+      "updatedAt": "2026-09-16T10:24:00.000Z",
+      "draft": {
+        "id": "draft-salt-wind",
+        "content": "潮水退去以后，港口只剩下一种颜色。\n\n我把地图折成四份，塞进旧风衣的内袋。",
+        "version": 7,
+        "updatedAt": "2026-09-16T10:24:00.000Z"
+      },
+      "sharedStatus": "private"
+    },
+    {
+      "id": "proj-lanterns",
+      "title": "午夜图书馆",
+      "description": "每一本被遗忘的书，都在午夜后亮起一盏灯。",
+      "visibility": "shared",
+      "cover": {
+        "kind": "image",
+        "value": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80",
+        "name": "library.jpg"
+      },
+      "ownerId": "user-demo",
+      "createdAt": "2026-08-22T12:10:00.000Z",
+      "updatedAt": "2026-09-12T16:40:00.000Z",
+      "draft": {
+        "id": "draft-lanterns",
+        "content": "图书馆在午夜十二点准时醒来。",
+        "version": 3,
+        "updatedAt": "2026-09-12T16:40:00.000Z"
+      },
+      "sharedStatus": "shared"
+    }
+  ]
+}
